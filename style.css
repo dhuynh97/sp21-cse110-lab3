@@ -32,7 +32,7 @@ h2 {
 	text-decoration: underline;
 	padding: 10px;
 	margin:auto;
-	font-size: xx-large;
+	font-size: 60px;
 	border-radius: 0.5em;
 	text-align: center;
 	font-family: 'Dancing Script', cursive;
@@ -61,6 +61,8 @@ h4 {
 	font-size: x-large;
 }
 
+
+
 p {
 	margin:auto;
 	background-color: antiquewhite;
@@ -74,7 +76,7 @@ nav {
 	background-color: cyan;
 }
 
-main {
+main, img {
 	display: flex;
 	flex-direction: column;
 }
@@ -97,17 +99,18 @@ img:hover {
 	max-width: 3000px;
 }
 
-nav ul{
+nav ul, nav a{
 	display: block;
 	border: 2px solid rebeccapurple;
-	padding: .5em;
+	padding: auto;
 	margin: auto;
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: purple;
 }
 
-nav a {
-	color: purple;
-	font-weight: bolder;
-	font-size: 2em;
+ul > li {
+	text-decoration: line-through;
 }
 
 form {
@@ -116,4 +119,38 @@ form {
 
 button:active {
 	font-size: 50px;
+}
+
+a[href="#entry1"] {
+	font-size: 60px;
+}
+
+#myHeader {
+	background-color : purple;
+}
+
+.date {
+	font-size:40px;
+}
+
+* {
+	margin-top: 20px;
+}
+
+*:hover{
+	color:hotpink;
+}
+
+h4 ~ p {
+	text-decoration: underline;
+}
+
+li:first-of-type + li {
+	background-color : darkgreen;
+	color: white;
+  }
+
+details.detailclass {
+	background-color : white;
+	color: darkgreen;
 }
